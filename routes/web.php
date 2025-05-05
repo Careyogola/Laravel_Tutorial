@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/about', function(){
     return '<h1>Welcome To Laravel.</h1>';
 });
+
