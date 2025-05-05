@@ -25,3 +25,4 @@ Route::post('login', [AuthController::class, 'login']);
 Route::middleware(['auth:sanctum'])->group(function(){
     Route::post('add-data',[DummyDataController::class, 'addData']);
 });
+Route::get('users', [AuthController::class, 'getusers']);

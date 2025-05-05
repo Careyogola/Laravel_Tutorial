@@ -30,7 +30,7 @@ class AuthRequest extends FormRequest
             //
             'name'=> ['required','string', 'max:255'],
             'email' => ['required','email','max:255', 'unique:users'],
-            'password'=> ['required', 'string',Password::min(8)->mixedCase()->numbers()->symbols(), 'confirmed'],
+            'password'=> ['required', 'string',Password::min(8)->mixedCase()->numbers()->symbols()],
         ];
     }
 }
